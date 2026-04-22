@@ -456,6 +456,7 @@ main section {
 .footer-row {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1rem;
   color: var(--muted);
 }
