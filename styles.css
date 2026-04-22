@@ -23,13 +23,23 @@ body {
 body {
   font-family: "Manrope", sans-serif;
   background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(217, 154, 78, 0.15), transparent 60%),
-    radial-gradient(1000px 500px at 90% 20%, rgba(127, 159, 103, 0.12), transparent 60%),
+    radial-gradient(
+      1200px 600px at 10% -10%,
+      rgba(217, 154, 78, 0.15),
+      transparent 60%
+    ),
+    radial-gradient(
+      1000px 500px at 90% 20%,
+      rgba(127, 159, 103, 0.12),
+      transparent 60%
+    ),
     var(--bg);
   color: var(--text);
   line-height: 1.5;
   overflow-x: hidden;
-  transition: background-color 450ms ease, color 450ms ease;
+  transition:
+    background-color 450ms ease,
+    color 450ms ease;
 }
 
 body,
@@ -57,8 +67,16 @@ body[data-time-theme="day"] {
   --accent-2: #577648;
   --line: rgba(42, 33, 25, 0.18);
   background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(190, 126, 48, 0.2), transparent 60%),
-    radial-gradient(1000px 500px at 90% 20%, rgba(87, 118, 72, 0.18), transparent 60%),
+    radial-gradient(
+      1200px 600px at 10% -10%,
+      rgba(190, 126, 48, 0.2),
+      transparent 60%
+    ),
+    radial-gradient(
+      1000px 500px at 90% 20%,
+      rgba(87, 118, 72, 0.18),
+      transparent 60%
+    ),
     var(--bg);
 }
 
@@ -71,7 +89,11 @@ body[data-time-theme="day"] .btn-primary {
 }
 
 body[data-time-theme="day"] .card {
-  background: linear-gradient(155deg, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0.58));
+  background: linear-gradient(
+    155deg,
+    rgba(255, 255, 255, 0.78),
+    rgba(255, 255, 255, 0.58)
+  );
 }
 
 body[data-time-theme="day"] .events {
@@ -79,7 +101,11 @@ body[data-time-theme="day"] .events {
 }
 
 body[data-time-theme="day"] .opening-strip {
-  background: linear-gradient(125deg, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.58));
+  background: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0.82),
+    rgba(255, 255, 255, 0.58)
+  );
 }
 
 body[data-time-theme="day"] .hours {
@@ -100,8 +126,16 @@ body[data-time-theme="dusk"] {
   --accent-2: #729060;
   --line: rgba(244, 234, 219, 0.2);
   background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(214, 154, 84, 0.22), transparent 60%),
-    radial-gradient(1000px 500px at 90% 20%, rgba(114, 144, 96, 0.15), transparent 60%),
+    radial-gradient(
+      1200px 600px at 10% -10%,
+      rgba(214, 154, 84, 0.22),
+      transparent 60%
+    ),
+    radial-gradient(
+      1000px 500px at 90% 20%,
+      rgba(114, 144, 96, 0.15),
+      transparent 60%
+    ),
     var(--bg);
 }
 
@@ -176,7 +210,11 @@ a {
   gap: 1rem;
   border: 1px solid var(--line);
   border-radius: 0.9rem;
-  background: linear-gradient(125deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.02));
+  background: linear-gradient(
+    125deg,
+    rgba(255, 255, 255, 0.07),
+    rgba(255, 255, 255, 0.02)
+  );
   padding: 0.75rem 1rem;
   margin-bottom: 1.2rem;
 }
@@ -263,7 +301,9 @@ h3 {
   padding: 0.75rem 1.1rem;
   border-radius: 999px;
   font-weight: 700;
-  transition: transform 180ms ease, background-color 180ms ease;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease;
 }
 
 .btn:hover {
@@ -314,12 +354,16 @@ main section {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
 .card {
-  background: linear-gradient(155deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  background: linear-gradient(
+    155deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.01)
+  );
   border: 1px solid var(--line);
   border-radius: 1rem;
   padding: 1.1rem;
@@ -344,7 +388,9 @@ main section {
   margin: 0 0 0.8rem;
   border-radius: 0.8rem;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 250ms ease, border-color 250ms ease;
+  transition:
+    transform 250ms ease,
+    border-color 250ms ease;
 }
 
 .masonry img:hover {
@@ -417,7 +463,9 @@ main section {
 .reveal {
   opacity: 0;
   transform: translateY(22px);
-  transition: opacity 650ms ease, transform 650ms ease;
+  transition:
+    opacity 650ms ease,
+    transform 650ms ease;
 }
 
 .reveal.delay-1 {
